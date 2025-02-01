@@ -1,0 +1,453 @@
+.container {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: white;
+  margin: 10px auto;
+  padding: 18px;
+}
+
+/* Entire table */
+table {
+  width: 100%;
+  direction: rtl;
+  border-spacing: 0 12px;
+  margin: 0;
+}
+
+.table-container {
+  overflow: auto;
+  max-height: 350px;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 -0.5rem 0.5rem inset rgb(0, 0, 0, 0.05);
+  position: relative;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+/* Hide the scrollbar but keep it functional */
+.table-container::-webkit-scrollbar {
+  display: none; /* For Webkit browsers (Chrome, Safari, etc.) */
+}
+
+.table-container {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* Table header */
+
+table thead tr {
+  background-color: #f4f5f7;
+  color: var(--secondary-font-color);
+  margin: 0;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+}
+
+thead th {
+  padding: 0.75rem;
+  font-weight: 400;
+}
+
+thead tr th:first-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+  -webkit-border-radius: 0 0.5rem 0.5rem 0;
+  -moz-border-radius: 0 0.5rem 0.5rem 0;
+  -ms-border-radius: 0 0.5rem 0.5rem 0;
+  -o-border-radius: 0 0.5rem 0.5rem 0;
+}
+
+thead tr th:last-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+  -webkit-border-radius: 0.5rem 0 0 0.5rem;
+  -moz-border-radius: 0.5rem 0 0 0.5rem;
+  -ms-border-radius: 0.5rem 0 0 0.5rem;
+  -o-border-radius: 0.5rem 0 0 0.5rem;
+}
+
+/* Table row */
+
+tbody tr td {
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+  padding: 0.75rem;
+}
+
+tbody tr td:first-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+  -webkit-border-radius: 0 0.5rem 0.5rem 0;
+  -moz-border-radius: 0 0.5rem 0.5rem 0;
+  -ms-border-radius: 0 0.5rem 0.5rem 0;
+  -o-border-radius: 0 0.5rem 0.5rem 0;
+  border-right: 1px solid var(--border-color);
+}
+
+tbody tr td:last-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+  -webkit-border-radius: 0.5rem 0 0 0.5rem;
+  -moz-border-radius: 0.5rem 0 0 0.5rem;
+  -ms-border-radius: 0.5rem 0 0 0.5rem;
+  -o-border-radius: 0.5rem 0 0 0.5rem;
+  border-left: 1px solid var(--border-color);
+}
+
+tbody tr td .img.logo {
+  background-image: url("https://w7.pngwing.com/pngs/73/762/png-transparent-html-css-design-and-build-web-sites-web-development-cascading-style-sheets-world-wide-web-web-design-text-logo.png");
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  background-size: cover;
+  background-position: center center;
+  vertical-align: middle;
+}
+
+/* Pages section */
+.pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* Right part */
+.pages .right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+}
+.pages .right p {
+  margin: 0;
+}
+
+.right select {
+  border-color: var(--border-color);
+  padding: 0.5rem;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+/* End right part */
+
+/* Left part */
+.pages .left .pages-numbers div {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin: 0 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages .left div:first-child {
+  color: var(--border-color);
+}
+
+.selected {
+  background-color: #3e97ff;
+  color: white;
+}
+/* End left part */
+
+/* End Pages section */
+
+/* ####################################################### */
+/* Responsive Section */
+
+@media (max-width: 400px) {
+  .container {
+    margin: 2px auto;
+    padding: 3.6px;
+  }
+
+  /* Entire table */
+  table {
+    border-collapse: separate;
+    border-spacing: 0 2.4px;
+  }
+
+  /* Table header */
+  thead th {
+    padding: 0.15rem;
+  }
+
+  /* Table row */
+  tbody tr td {
+    padding: 0.15rem;
+  }
+
+  /* ##### Pages Section ##### */
+  /* Left part */
+  .pages .left .pages-numbers div {
+    width: 20px;
+    height: 20px;
+    margin: 0 1px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .container {
+    margin: 2px auto;
+    padding: 3.6px;
+  }
+
+  /* Entire table */
+  table {
+    border-collapse: separate;
+    border-spacing: 0 2.4px;
+  }
+
+  /* Table header */
+  thead th {
+    padding: 0.15rem;
+  }
+
+  /* Table row */
+  tbody tr td {
+    padding: 0.15rem;
+  }
+
+  /* ##### Pages Section ##### */
+  /* Left part */
+  .pages .left .pages-numbers div {
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .container {
+    margin: 2px auto;
+    padding: 3.6px;
+  }
+
+  /* Entire table */
+  table {
+    border-collapse: separate;
+    border-spacing: 0 2.4px;
+  }
+
+  /* Table header */
+  thead th {
+    padding: 0.15rem;
+  }
+
+  /* Table row */
+  tbody tr td {
+    padding: 0.15rem;
+  }
+
+  /* ##### Pages Section ##### */
+  /* Left part */
+  .pages .left .pages-numbers div {
+    width: 25px;
+    height: 25px;
+    margin: 0 4px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .container {
+    margin: 4px auto;
+    padding: 7.2px;
+  }
+
+  /* Entire table */
+  table {
+    border-collapse: separate;
+    border-spacing: 0 4.8px;
+  }
+
+  /* Table header */
+  thead th {
+    padding: 0.3rem;
+  }
+
+  /* Table row */
+  tbody tr td {
+    padding: 0.3rem;
+  }
+
+  /* ##### Pages Section ##### */
+  /* Left part */
+  .pages .left .pages-numbers div {
+    width: 30px;
+    height: 30px;
+    margin: 0 6px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .container {
+    margin: 6px auto;
+    padding: 10.8px;
+  }
+
+  /* Entire table */
+  table {
+    border-collapse: separate;
+    border-spacing: 0 7.2px;
+  }
+
+  /* Table header */
+  thead th {
+    padding: 0.45rem;
+  }
+
+  /* Table row */
+  tbody tr td {
+    padding: 0.45rem;
+  }
+  /* ##### Pages Section ##### */
+  /* Left part */
+  .pages .left .pages-numbers div {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .container {
+    margin: 8px auto;
+    padding: 14.4px;
+  }
+
+  /* Entire table */
+  table {
+    border-collapse: separate;
+    border-spacing: 0 9.6px;
+  }
+
+  /* Table header */
+  thead th {
+    padding: 0.6rem;
+  }
+
+  /* Table row */
+  tbody tr td {
+    padding: 0.6rem;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 2000px) {
+  .container {
+    margin: 10px auto;
+    padding: 18px;
+  }
+
+  /* Entire table */
+  table {
+    border-collapse: separate;
+    border-spacing: 0 12px;
+  }
+
+  /* Table header */
+  thead th {
+    padding: 0.75rem;
+  }
+
+  /* Table row */
+  tbody tr td {
+    padding: 0.75rem;
+  }
+
+  /* ##### Pages Section ##### */
+  .pages {
+    margin-top: 1rem;
+  }
+
+  /* Right part */
+  .pages .right {
+    gap: 5px;
+  }
+
+  .right select {
+    padding: 0.5rem;
+  }
+  /* End right part */
+
+  /* Left part */
+  .pages .left .pages-numbers div {
+    width: 40px;
+    height: 40px;
+    margin: 0 6px;
+  }
+  /* ##### Pages Section ##### */
+  /* Left part */
+  .pages .left .pages-numbers div {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .container {
+    margin: 12px auto;
+    padding: 21.6px;
+  }
+
+  /* Entire table */
+  table {
+    border-collapse: separate;
+    border-spacing: 0 14.4px;
+  }
+
+  /* Table header */
+  thead th {
+    padding: 0.9rem;
+  }
+
+  /* Table row */
+  tbody tr td {
+    padding: 0.9rem;
+  }
+  /* ##### Pages Section ##### */
+  .pages {
+    margin-top: 1rem;
+  }
+
+  /* Right part */
+  .pages .right {
+    gap: 5px;
+  }
+
+  .right select {
+    padding: 0.5rem;
+  }
+  /* End right part */
+
+  /* Left part */
+  .pages .left .pages-numbers div {
+    width: 40px;
+    height: 40px;
+    margin: 0 6px;
+  }
+  /* ##### Pages Section ##### */
+  /* Left part */
+  .pages .left .pages-numbers div {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,26 @@
+<div class="container" style="background-color: white">
+  <div class="top">
+    <div class="left center-content custom-cursor">
+      <i class="ellipsis fa-solid fa-ellipsis" (click)="hidelist()"></i>
+      <div class="list" [hidden]="hide">
+        <ul>
+          <li>
+            تعديل الرقم
+            <span><i class="fa-solid fa-pen"></i></span>
+          </li>
+          <li>
+            إلغاء التعيين
+            <span><i class="fa-solid fa-link-slash"></i></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <form class="right">
+      <!-- <div type="submit">قيد الاستخدام</div> -->
+      <div>قيد الاستخدام</div>
+      <!-- <input type="text" value="01234567890" /> -->
+      <p class="number">01234567890</p>
+    </form>
+  </div>
+  <app-info-child></app-info-child>
+</div>

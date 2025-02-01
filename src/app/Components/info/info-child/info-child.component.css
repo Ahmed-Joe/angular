@@ -1,0 +1,78 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  position: relative;
+}
+
+.container div {
+  text-align: center;
+  position: relative;
+}
+
+.container div p:first-child {
+  color: var(--secondary-font-color);
+}
+
+.container div p {
+  direction: rtl;
+}
+
+.container div p .img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  background-size: cover;
+  background-position: center center;
+  vertical-align: middle;
+}
+
+.container div p .img.sak {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg");
+}
+.container div p .img.logo {
+  background-image: url("https://w7.pngwing.com/pngs/73/762/png-transparent-html-css-design-and-build-web-sites-web-development-cascading-style-sheets-world-wide-web-web-design-text-logo.png");
+}
+
+.container div::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 28px;
+  background-color: #dfdfdf;
+  top: calc(50% - 14px);
+  left: 0;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  background-color: white;
+}
+
+/* ####################################################### */
+/* Responsive Section */
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .container {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 2000px) {
+  .container {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .container {
+    font-size: 1.35rem;
+  }
+}

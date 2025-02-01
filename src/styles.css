@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  --main-color: #f8f8f8;
+  --border-color: #e4e4e4;
+  --main-font-color: #1c1c28;
+  --secondary-font-color: #6b7280;
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: "neo sans arabic";
+  color: var(--main-font-color);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* importing font from pc */
+@font-face {
+  font-family: "neo sans arabic";
+  src: url(/Fonts/Neo\ Sans\ Arabic\ Regular.ttf) format("truetype");
+}
+
+/* General styling classes */
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  font-family: "poppins", serif;
+}

@@ -1,0 +1,58 @@
+.container {
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding: 1.5rem 1rem;
+}
+/* ############################################### */
+/* Left part*/
+.left .date {
+  text-align: center;
+}
+
+.left p {
+  color: var(--secondary-font-color);
+  margin: 0;
+  justify-self: end;
+}
+
+.left .dot {
+  font-size: 0.5rem;
+  color: var(--border-color);
+  align-self: center;
+  margin: 0.2rem;
+}
+/* End left part*/
+/* ############################################### */
+/* Right part */
+.right div p {
+  justify-self: end;
+}
+
+.right div p:first-child {
+  color: var(--secondary-font-color);
+}
+
+img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left: 0.5rem;
+}
+/* End right part */
+
+/* ####################################################### */
+/* Responsive Section */
+@media (max-width: 400px) {
+  .container {
+    font-size: 0.75rem;
+  }
+}
